@@ -444,6 +444,7 @@ display:block;   /* 마우스 커서 올리면 서브메뉴 보이게 하기 */
   .contact {flex: 1;}
   .contact:first-child{margin-right: 20px;}
 }
+<<<<<<< HEAD
 /*로그인폼*/
 .login .container {
   max-width: 800px;
@@ -515,3 +516,5 @@ display:block;   /* 마우스 커서 올리면 서브메뉴 보이게 하기 */
   color: #A7304F;
   text-decoration: none;
 }
+=======
+>>>>>>> 29aae6ea688f78cac1deb1cb68cb335f673f7fbb
