@@ -1,84 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SEAKER</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <style>
+<html lang="ko">
 
-    </style>
-  </head>
-  <body>
-    <div class="col-md-6 col-md-offset-3">
-          <a href="#"><img class="img-responsive" src="" alt="logo"></a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/8f3081df2a.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(function() {
+      $(".headC").click(function() {
+        $(".headB").slideToggle();
+      });
+    });
+  </script>
+
+  <title>SEAKER</title>
+
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Saira+Stencil+One|Song+Myung&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+</style>
+
+<body class="nohero">
+  <header class="head-fixed">
+    <div class="container">
+      <div class="container-small">
+        <a href="index.html" class="headA">SEAKER</a>
+        <button type="button" class="headC">
+          <span class="fas fa-bars" title="MENU"></span>
+        </button>
+      </div>
+      <nav class="headB">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="about.html" id="current">ABOUT</a>
+            <ul>
+              <li><a href="about.html">목표/기대효과</a></li>
+            </ul>
+          </li>
+          <li><a href="#">진단하기</a>
+            <ul>
+              <li><a href="webdiagnose.html">웹사이트</a></li>
+              <li><a href="iotdiagnose.html">IoT</a></li>
+            </ul>
+          </li>
+          <li><a href="#">알림광장</a>
+            <ul>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">팀원 정보</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">도움말</a>
+            <ul>
+              <li><a href="account.html">계정 생성/삭제</a></li>
+              <li><a href="contact.html">문의</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <form role="form" action="#" name="signin">
-        <filedset>
-            <div class="col-md-6 col-md-offset-3">
-                  <legend style="padding-bottom:20px">회원가입</legend>
-            </div>
-            <div class="col-sm-6 col-md-offset-3">
-                  <div class="form-group">
-                        <label for="inputID">아이디</label>
-                        <input type="text" class="form-control" id="inputID" placeholder="아이디를 입력해주세요">
-                  </div>
-                  <div class="form-group">
-                        <label for="inputPassword">비밀번호</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="비밀번호를 입력해주세요">
-                  </div>
-                  <div class="form-group">
-                        <label for="inputPasswordCheck">비밀번호 확인</label>
-                        <input type="password" class="form-control" id="inputPasswordCheck" placeholder="비밀번호 확인을 위해 다시 한 번 입력해주세요">
-                  </div>
-                  <div class="form-group">
-                        <label for="inputName">이름</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="아이디를 입력해주세요">
-                  </div>
-                  <div class="form-group">
-                        <label for="inputMobile" >휴대폰 번호</label>
-                        <input type="tel" class="form-control" id="inputMobile" placeholder="-제외한 휴대폰 번호를 입력해주세요">
-                  </div>
-                  <div class="form-group">
-                        <label for="InputEmail">이메일 주소</label>
-                        <input type="email" class="form-control" id="InputEmail" placeholder="이메일">
-                  </div>
-                  <div class="form-group">
-                        <label for="inputCom">회사명</label>
-                        <select class="form-control" name="comName">
-                              <option value="0" tabindex="-1" selected disabled><a href="#">재직 중인 항만 공사</a></option>
-                              <option value="1" tabindex="-1"><a href="#">부산항만공사</a></option>
-                              <option value="2" tabindex="-1"><a href="#">여수항만공사</a></option>
-                              <option value="3" tabindex="-1"><a href="#">울산항만공사</a></option>
-                              <option value="4" tabindex="-1"><a href="#">인천항만공사 </a></option>
-                        </select>
-                  </div>
-                  <div class="form-group">
-                        <label class="checkbox-inline" for="inlineCheckbox">
-                              <input type="checkbox" id="inlineCheckbox" value="agree">
-                              원활한 서비스 이용을 위해 개인정보 수집에 동의해주세요
+  </header>
+  <article class="registerpage">
+    <div class="container">
+      <div class="bread">
+        <ol>
+          <li><a href="#">도움말</a></li>
+          <li><a href="account.html">계정 생성/삭제</a></li>
+          <li><a href="register.html">계정 생성</a></li>
+        </ol>
+      </div>
+    </div>
+      <div class="makeaccount-text">
+        <h1>계정생성</h1>
+      </div>
+      <div class="register-box">
+        <div class="info-input">
+          <p>이름:</p>
+          <input type="text" class="form-control" id="inputName" placeholder="이름을 입력해주세요">
+          <p>이메일 주소:</p>
+          <input type="email" class="form-control" id="InputEmail" placeholder="이메일 주소를 입력해주세요">
+          <p>핸드폰 번호:</p>
+          <input type="tel" class="form-control" id="inputMobile" placeholder="'-'를 제외한 휴대폰 번호를 입력해주세요">
+          <p>아이디:</p>
+          <input type="text" class="form-control" id="inputID" placeholder="아이디를 입력해주세요">
+          <p>비밀번호:</p>
+          <input type="password" class="form-control" id="inputPassword" placeholder="비밀번호를 입력해주세요">
+          <p>비밀번호 확인:</p>
+          <input type="password" class="form-control" id="inputPasswordCheck" placeholder="비밀번호 확인을 위해 다시 한 번 입력해주세요">
+        </div>
+        <div class="agreement">
+          <div class="pre-scroller">
+            <p>1. 개인정보 수집항목
+              <br>아이디, 비밀번호, 이름, 휴대폰 번호, 이메일</p>
+            <p>2. 수집 기간
+              <br>회원 탈퇴 시까지</p>
+            <p>3. 수집 목적
+              <br>고객 유형별 데이터 분석, 고객 맞춤형 서비스 제공</p>
+          </div>
+          <div class="check">
+            <label class="checkbox-inline" for="inlineCheckbox">
+              <input type="checkbox" id="inlineCheckbox" value="agree">
+              원활한 서비스 이용을 위해 개인정보 수집에 동의해주세요
+            </label>
+          </div>
+        </div>
+        <div class="register-button">
+          <a href="#">계정 생성하기</a>
+        </div>
+      </div>
+  </article>
+  <footer>
+    <div class="container">
+      <div class="footA">
+        <h2><img src="img/whiteseagull.png" alt="">SEAKER</h2>
+        <p>
+          대표전화 010-1234-5678 | 이메일 seaker@seaker.co.kr<br>
+          cooperated with 한이음<br>
+        </p>
 
-                        </label>
-                        <pre class="pre-scroller">
-1. 개인정보 수집항목
-아이디, 비밀번호, 이름, 휴대폰 번호, 이메일, 회사명
-2. 수집 기간
-회원 탈퇴 시까지
-3. 수집 목적
-고객 유형별 데이터 분석, 고객 맞춤형 서비스 제공
-</pre>
-                  </div>
-                  <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block">가입하기</button>
-                  </div>
+        <nav class="footD">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="fab fa-google" title="google"></span>
+              </a></li>
+            <li>
+              <a href="#">
+                <span class="fab fa-youtube" title="Youtube"></span>
+              </a></li>
+            <li>
+              <a href="#">
+                <span class="fab fa-instagram" title="Instagram"></span>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="footB">
+        <div>
+          <h3>ABOUT</h3>
+          <ul>
+            <li><a href="about.html">목표</a></li>
+            <li><a href="about.html">기대효과</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>HELP</h3>
+          <ul>
+            <li><a href="#">메뉴얼</a></li>
+            <li><a href="contact.html">문의</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>CONTENTS</h3>
+          <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">스태프 프로필</a></li>
+            <li><a href="#">조직도</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footC">
+        ⓒSEAKER corp. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
 
-
-            </div>
-        </filedset>
-    </form>
-
-
-  </body>
 </html>

@@ -13,7 +13,7 @@
       });
     });
   </script>
-  <title>SEAKER</title>
+  <title>Document</title>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Saira+Stencil+One|Song+Myung&display=swap" rel="stylesheet">
 </head>
 
@@ -40,7 +40,9 @@
       <nav class="headB">
         <ul>
           <li><a href="index.html">HOME</a></li>
+
           <li><a href="login.html">LOGIN</a></li>
+
           <li><a href="about.html" id="current">ABOUT</a>
             <ul>
               <li><a href="about.html">목표/기대효과</a></li>
@@ -64,40 +66,27 @@
       </nav>
     </div>
   </header>
-  <article class="LOGIN">
+  <article class="post">
     <div class="container">
       <div class="bread">
         <ol>
-          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="about.html">도움말</a></li>
+          <li><a href="about.html">계정 생성/삭제</a></li>
         </ol>
       </div>
-      <div class="login-container">
-        <h1>LOGIN</h1>
-        <div class="id">
-          <div class="id-icon">
-            <span class="fas fa-portrait"></span>
+      <h1>계정 생성/삭제</h1>
+      <p>'계정 생성'을 통해 계정을 새로 만들거나 '계정 삭제'를 통해 이미 있는 계정을 삭제할 수 있습니다.</p>
+      <div class="account-wrap">
+          <div class="account">
+            <a href="register.html"><span class="fas fa-user-alt"></span></a>
+            <h3><a href="register.html">계정 생성</a></h3>
           </div>
-          <div class="id-input">
-            <input type="text" class="form-control input-lg" placeholder="아이디">
+          <div class="account">
+            <a href="#"><span class="fas fa-user-slash"></span></a>
+            <h3><a href="#">계정 삭제</a></h3>
           </div>
-        </div>
-
-        <div class="pw">
-          <div class="pw-icon">
-            <span class="fas fa-key"></span>
-          </div>
-          <div class="pw-input">
-            <input type="password" class="form-control input-lg" placeholder="비밀번호">
-          </div>
-        </div>
-        <div class="login-button">
-          <a href="#">로그인</a>
-        </div>
-        <div class="register-find">
-          <p>계정이 없으신가요?<a href="#">계정 만들기</a></p>
-        </div>
       </div>
-  </div>
+    </div>
   </article>
   <footer>
     <div class="container">
