@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang = "ko">
+<html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="boardstyle.css">
   <script src="https://kit.fontawesome.com/8f3081df2a.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script>$(function(){
-    $(".headC").click(function(){
-      $(".headB").slideToggle();
+  <script>
+    $(function() {
+      $(".headC").click(function() {
+        $(".headB").slideToggle();
       });
     });
   </script>
+
   <title>SEAKER</title>
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Saira+Stencil+One|Song+Myung&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Saira+Stencil+One|Song+Myung&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -22,12 +26,13 @@
     position: absolute;
     width: 1px;
     padding: 0;
-    margin:-1px;
+    margin: -1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     border: 0;
   }
 </style>
+
 <body class="nohero">
   <header class="head-fixed">
     <div class="container">
@@ -40,119 +45,104 @@
       <nav class="headB">
         <ul>
           <li><a href="index.html">HOME</a></li>
-
           <li><a href="login.html">LOGIN</a></li>
-
           <li><a href="about.html" id="current">ABOUT</a>
             <ul>
               <li><a href="about.html">목표/기대효과</a></li>
-            </ul></li>
+            </ul>
+          </li>
           <li><a href="#">진단하기</a>
             <ul>
               <li><a href="webdiagnose.html">웹사이트</a></li>
               <li><a href="iotdiagnose.html">IoT</a></li>
-            </ul></li>
+            </ul>
+          </li>
           <li><a href="#">알림광장</a>
             <ul>
               <li><a href="board.html">공지사항</a></li>
               <li><a href="teaminfo.html">팀원 정보</a></li>
-            </ul></li>
+            </ul>
+          </li>
           <li><a href="#">도움말</a>
             <ul>
               <li><a href="account.html">계정 생성/삭제</a></li>
               <li><a href="contact.html">문의</a></li>
-            </ul></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
-  <article class="teaminfo">
+  <article class="post">
     <div class="container">
       <div class="bread">
         <ol>
           <li><a href="#">알림광장</a></li>
-          <li><a href="teaminfo.html">팀원 정보</a></li>
+          <li><a href="board.html">공지사항</a></li>
         </ol>
       </div>
-      <h1>팀원 정보</h1>
-        <div class="mentee mentee1">
-          <div class="mentee1-img">
-            <img src="img/영은.jpg" alt="영은">
-            <h3>김영은 팀장</h3>
-            <p>"영은님 한 말씀"</p>
-          </div>
-          <div class="mentee1-txt">
-            <li>Mock Hacking</li>
-            <li>WEB Security Diagnosis</li>
-            <li>IoT Security Diagnosis</li>
-            <div class="mentee-mail">
-              <div class="mentee-icon">
-                <span class="far fa-envelope"></span>
-              </div>
-              <div class="mentee-address">
-                <a href="mailto:@gmail.com">@gmail.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mentee mentee2">
-          <div class="mentee2-img">
-            <img src="img/선진.jpg" alt="선진">
-            <h3>김선진 팀원</h3>
-            <p>"선진님 한 말씀"</p>
-          </div>
-          <div class="mentee2-txt">
-            <li>Mock Hacking</li>
-            <li>WEB Security Diagnosis</li>
-            <li>IoT Security Diagnosis</li>
-            <div class="mentee-mail">
-              <div class="mentee-icon">
-                <span class="far fa-envelope"></span>
-              </div>
-              <div class="mentee-address">
-                <a href="mailto:@gmail.com">@gmail.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mentee mentee3">
-          <div class="mentee3-img">
-            <img src="img/하정.jpg" alt="하정">
-            <h3>이하정 팀원</h3>
-            <p>"하정님 한 말씀"</p>
-          </div>
-          <div class="mentee3-txt">
-            <li>WEB & APP Develope</li>
-            <li>WEB & APP Design</li>
-            <div class="mentee-mail">
-              <div class="mentee-icon">
-                <span class="far fa-envelope"></span>
-              </div>
-              <div class="mentee-address">
-                <a href="mailto:ljh1012kr@gmail.com">ljh1012kr@gmail.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mentee mentee4">
-          <div class="mentee4-img">
-            <img src="img/다운.jpg" alt="다운">
-            <h3>전다운 팀원</h3>
-            <p>"다운님 한 말씀"</p>
-          </div>
-          <div class="mentee4-txt">
-            <li>WEB Server</li>
-            <li>WEB DB</li>
-            <div class="mentee-mail">
-              <div class="mentee-icon">
-                <span class="far fa-envelope"></span>
-              </div>
-              <div class="mentee-address">
-                <a href="mailto:areumdaunn@naver.com">areumdaunn@naver.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <h1>공지사항</h1>
+      <div class="board-container">
+        <table>
+          <!-- 해드부 -->
+          <colgroup>
+            <col width="50" />
+            <col width="450" />
+            <col width="100" />
+            <col widht="100" />
+            <col width="50" />
+          </colgroup>
+          <!-- 바디부 -->
+          <thead>
+            <tr>
+              <th>no</th>
+              <th>title</th>
+              <th>date</th>
+              <th>writer</th>
+              <th>count</th>
+            </tr>
+          </thead>
+          <!-- 버텀부 -->
+          <tbody>
+            <tr>
+              <td class="tdNo">1</td>
+              <td class="tdTitle"><a href="#">제목</a> </td>
+              <td class="tdDate"> 2019.08.09</td>
+              <td class="tdName">lee</td>
+              <td class="tdCount">0</td>
+            </tr>
+            <tr>
+              <td class="tdNo">2</td>
+              <td class="tdTitle"><a href="#">제목</a> </td>
+              <td class="tdDate"> 2019.08.09</td>
+              <td class="tdName">lee</td>
+              <td class="tdCount">0</td>
+            </tr>
+            <tr>
+              <td class="tdNo">3</td>
+              <td class="tdTitle"><a href="#">제목</a> </td>
+              <td class="tdDate"> 2019.08.09</td>
+              <td class="tdName">lee</td>
+              <td class="tdCount">0</td>
+            </tr>
+            <tr>
+              <td class="tdNo">4</td>
+              <td class="tdTitle"><a href="#">제목</a> </td>
+              <td class="tdDate"> 2019.08.09</td>
+              <td class="tdName">lee</td>
+              <td class="tdCount">0</td>
+            </tr>
+          </tbody>
+          <!--버텀부-->
+          <tfoot>
+            <tr>
+              <td colspan="5" class="tdFoot"> [prev]
+                <a href="#"> 1</a>
+                [next]
+            </tr>
+          </tfoot>
+        </table>
+      </div>
     </div>
   </article>
   <footer>
@@ -200,7 +190,7 @@
           <h3>CONTENTS</h3>
           <ul>
             <li><a href="board.html">공지사항</a></li>
-            <li><a href="#">스태프 프로필</a></li>
+            <li><a href="teaminfo.html">스태프 프로필</a></li>
             <li><a href="#">조직도</a></li>
           </ul>
         </div>
@@ -211,4 +201,5 @@
     </div>
   </footer>
 </body>
+
 </html>

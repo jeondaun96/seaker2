@@ -22,7 +22,7 @@ body {font-size: 16px}
 /*기본 설정: 페이지 전체*/
 body {
   margin:0;
-  font-family: 'Song Myung','Apple SD Gothic Neo','Noto Sans KR', sans-serif;
+  font-family: 'Song Myung','Noto Sans KR', 'Do Hyeon', sans-serif;
 }
 
 /*콘텐츠A:헤더이미지*/
@@ -32,7 +32,7 @@ body {
   justify-content: center;
   height: 100vh;
   min-height: 450px;
-  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)),url(img/headerImage.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)),url(img/smartport.jpg);
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -51,7 +51,8 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
-  font-family: 'Song Myung', serif;
+  font-family: 'Do Hyeon', sans-serif;
+  line-height: 30px;
   letter-spacing: 0.2em;
   margin-left: 0.2em;
 }
@@ -283,7 +284,7 @@ header {
   line-height: 50px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #509BB3;
+  background-color: #031E40;
   color: #fff;
   font-family:'Saira Stencil One', cursive;
   font-size: 20px;
@@ -384,6 +385,7 @@ display:block;   /* 마우스 커서 올리면 서브메뉴 보이게 하기 */
 }
 .post h2 {
   font-size: 1.5rem;
+  margin-top: 50px;
   padding-left: 0.5rem;
   border-left: solid 0.6rem #66160E;
 }
