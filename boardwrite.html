@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="boardstyle.css">
+  <link rel="stylesheet" href="boardwrite.css">
   <script src="https://kit.fontawesome.com/8f3081df2a.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script>
@@ -82,70 +82,29 @@
         </ol>
       </div>
       <h1>공지사항</h1>
-      <div class="board-container">
-        <table>
-          <!-- 해드부 -->
-          <colgroup>
-            <col width="50" />
-            <col width="500" />
-            <col width="100" />
-            <col widht="100" />
-            <col width="50" />
-          </colgroup>
-          <!-- 바디부 -->
-          <thead>
-            <tr>
-              <th>no</th>
-              <th>title</th>
-              <th>date</th>
-              <th>writer</th>
-              <th>count</th>
-            </tr>
-          </thead>
-          <!-- 버텀부 -->
-          <tbody>
-            <tr>
-              <td class="tdNo">1</td>
-              <td class="tdTitle"><a href="#">제목</a> </td>
-              <td class="tdDate"> 2019.08.09</td>
-              <td class="tdName">lee</td>
-              <td class="tdCount">0</td>
-            </tr>
-            <tr>
-              <td class="tdNo">2</td>
-              <td class="tdTitle"><a href="#">제목</a> </td>
-              <td class="tdDate"> 2019.08.09</td>
-              <td class="tdName">lee</td>
-              <td class="tdCount">0</td>
-            </tr>
-            <tr>
-              <td class="tdNo">3</td>
-              <td class="tdTitle"><a href="#">제목</a> </td>
-              <td class="tdDate"> 2019.08.09</td>
-              <td class="tdName">lee</td>
-              <td class="tdCount">0</td>
-            </tr>
-            <tr>
-              <td class="tdNo">4</td>
-              <td class="tdTitle"><a href="#">제목</a> </td>
-              <td class="tdDate"> 2019.08.09</td>
-              <td class="tdName">lee</td>
-              <td class="tdCount">0</td>
-            </tr>
-          </tbody>
-          <!--버텀부-->
-          <tfoot>
-            <tr>
-              <td colspan="5" class="tdFoot"> [prev]
-                <a href="#"> 1</a>
-                [next]
-            </tr>
-          </tfoot>
-        </table>
-        <form class="tablemenu" action="index.html" method="post">
-          <button type="button" name="write" onclick="location.href='boardwrite.html'">글작성</button>
-        </form>
-      </div>
+      <div class="container">
+    		<div class="row">
+    			<form method="post" action="writeAction.jsp">
+    				<table class="table table-striped"
+    					style="text-align: center; border: 1px solid #dddddd">
+    					<thead>
+    						<tr>
+    							<th colspan="2" style="background-color: #eeeeee; text-align: center; font-size: 16px; letter-spacing: 0.8em; color:#495057;">공지사항 작성</th>
+    						</tr>
+    					</thead>
+    					<tbody>
+    						<tr>
+    							<td><input type="text" class="form-control" placeholder="글 제목" name="bbsTitle" maxlength="50"/></td>
+    						</tr>
+    						<tr>
+    							<td><textarea class="form-control" placeholder="글 내용" name="bbsContent" maxlength="2048" style="height: 350px;"></textarea></td>
+    						</tr>
+    					</tbody>
+    				</table>
+    				<input type="submit" class="btn btn-primary pull-right" value="글 저장" />
+    			</form>
+    		</div>
+    	</div>
     </div>
   </article>
   <footer>
