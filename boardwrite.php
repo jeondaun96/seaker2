@@ -2,7 +2,7 @@
 include('header.php');?>
 <style>
 <?php
-include('boardwrite.css');
+include('css/boardwrite.css');
 ?>
 </style>
   <article class="post">

@@ -5,8 +5,8 @@
     <div class="container">
       <div class="bread">
         <ol>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="about.html">목표/기대효과</a></li>
+          <li><a href="about.php">ABOUT</a></li>
+          <li><a href="about.php">목표/기대효과</a></li>
         </ol>
       </div>
       <h1>목표</h1>
@@ -31,6 +31,6 @@
          스마트 항만 물류 상의 웹과 IoT 기기의 보안 취약점을 진단할 수 있는 보안 시스템을 개발해 안전한 '에코스마트 항만' 유지를 목표로 한다.</p>
     </div>
   </article>
-<?php 
+<?php
   include('footer.php');
  ?>

@@ -60,23 +60,7 @@ body {
   margin-right: 0.3em;
   width:10%;
 }
-/* .conA a {
-  display: inline-block;
-  margin-top: 20px;
-  letter-spacing: 0.3em;
-  padding: 10px 30px;
-  border: solid 3px currentColor;
-  border-radius: 6px;
-  background-color: #043066;
-  background-color: var(--accent-color);
-  color: #fff;
-  color: var(--text-bright-color);
-  font-size: 14px;
-  text-decoration: none;
-}
-.conA a:hover{
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2));
-} */
+
 @media (min-width:768px) {
   .conA h1{font-size: 115px;}
   .conA p {font-size: 24px;}

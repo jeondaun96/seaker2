@@ -16,10 +16,22 @@
 
   <title>SEAKER</title>
 
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Saira+Stencil+One|Song+Myung&display=swap" rel="stylesheet">
-</head>
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Noto+Sans+KR|Saira+Stencil+One|Song+Myung&display=swap" rel="stylesheet"></head>
 
 <style>
+.conA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 450px;
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)),url(img/smartport.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  color: var(--text-bright-color);
+  text-align: center;
+}
   .sr-only {
     position: absolute;
     width: 1px;
@@ -30,8 +42,8 @@
     border: 0;
   }
 </style>
-<body class="nohero">
-  <header class="head-fixed">
+<body>
+  <header>
     <div class="container">
       <div class="container-small">
         <a href="index.php" class="headA">SEAKER</a>
@@ -57,7 +69,7 @@
               <li><a href="board.php">공지사항</a></li>
               <li><a href="teaminfo.php">팀원 정보</a></li>
             </ul></li>
-          <li><a href="#">도움말</a>
+          <li><a href="contact.php">도움말</a>
             <ul>
               <li><a href="account.php">계정 생성/삭제</a></li>
               <li><a href="contact.php">문의</a></li>

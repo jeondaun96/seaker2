@@ -1,13 +1,13 @@
 <?php
-include('header.php');
+include('index_header.php');
+
  ?>
   <section class="conA">
     <div class="container">
       <h1><img src="img/whiteseagull.png" alt="">SEAKER</h1>
-      <!-- <p>The Bodyguard For The Sea</p> -->
-      <!-- <p>"THE BODYGUARD FOR THE SEA"</p> -->
+
       <p>우리는 가장 앞에서 바다를 책임집니다</p>
-      <!-- <p>SMART한 그대, SEAKER와 함께하세요.</p> -->
+
     </div>
   </section>
   <section class="conB">
@@ -23,10 +23,11 @@ include('header.php');
         <span class="fas fa-wifi icon"></span>
         <h2>IoT기기 취약점 진단</h2>
         <p>스마트 항만 IoT기기의 취약점을 진단한다.</p>
-        <a href="iotdiagnose.php">진단하기<span class="fas fa-chevron-circle-right"></span></a>
+        <a href="#">진단하기<span class="fas fa-chevron-circle-right"></span></a>
       </div>
     </div>
   </section>
 <?php
 include('footer.php');
+
  ?>
